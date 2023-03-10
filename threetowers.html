@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metaverse</title>
+    <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script> 
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script> 
+</head>
+<body>
+    <a-scene>
+        <a-camera position="0 2 0" >
+            <a-cursor intersection-spawn="Event: click; mixin:voxel;"></a-cursor>
+       </a-camera>
+        <a-entity environment="preset:threetowers;"></a-entity>
+        <!-- RAELM LINKS-->
+        <a-sphere id="forest" position="0 2 -9" src="portal/forest.jpg"></a-sphere>
+        <a-sphere id="arches" position="3 2 -9" src="portal/arches.jpg"></a-sphere>
+        <a-sphere id="contact" position="-3 2 -9" src="portal/contact.jpg"></a-sphere>
+        <a-sphere id="dream" position="-6 2 -9" src="portal/dream.jpg"></a-sphere>
+        <a-sphere id="egypt" position="6 2 -9" src="portal/egypt.jpg"></a-sphere>
+        <a-sphere id="goaland" position="6 2 -6" src="portal/goaland.jpg"></a-sphere>
+        <a-sphere id="goldmine" position="6 2 -3" src="portal/goldmine.jpg"></a-sphere>
+        <a-sphere id="japan" position="6 2 0" src="portal/japan.jpg"></a-sphere>
+        <a-sphere id="osiris" position="6 2 3" src="portal/osiris.jpg"></a-sphere>
+        <a-sphere id="poison" position="6 2 6" src="portal/poison.jpg"></a-sphere>
+        <a-sphere id="starry" position="-6 2 -6" src="portal/starry.jpg"></a-sphere>
+        <a-sphere id="threetowers" position="-6 2 -3" src="portal/threetowers.jpg"></a-sphere>
+        <a-sphere id="tron" position="-6 2 0" src="portal/tron.jpg"></a-sphere>
+        <a-sphere id="volcano" position="-6 2 3" src="portal/volcano.jpg"></a-sphere>
+        <a-sphere id="yavapai" position="-6 2 6" src="portal/yavapai.jpg"></a-sphere>
+        <!-- nft and ar link-->
+        <a-box id="nft" position="0 2 6" scale="2 2 2" src="nft and ar/nft.png"></a-box>
+        <a-box id="AR" position="0 6 6" scale="2 2 2" src="nft and ar/AR.jpeg"></a-box>
+    </a-scene>
+</body>
+<script>
+    /*sperhe*/
+    document.querySelector("#forest").addEventListener("click",e =>{
+        location.href = "forest.html";
+    })
+    document.querySelector("#arches").addEventListener("click",e =>{
+        location.href = "arches.html";
+    })
+    document.querySelector("#contact").addEventListener("click",e =>{
+        location.href = "contact.html";
+    })
+    document.querySelector("#dream").addEventListener("click",e =>{
+        location.href = "dream.html";
+    })
+    document.querySelector("#egypt").addEventListener("click",e =>{
+        location.href = "egypt.html";
+    })
+    document.querySelector("#goaland").addEventListener("click",e =>{
+        location.href = "goaland.html";
+    })
+    document.querySelector("#goldmine").addEventListener("click",e =>{
+        location.href = "goldmine.html";
+    })
+    document.querySelector("#japan").addEventListener("click",e =>{
+        location.href = "japan.html";
+    })
+    document.querySelector("#osiris").addEventListener("click",e =>{
+        location.href = "osiris.html";
+    })
+    document.querySelector("#poison").addEventListener("click",e =>{
+        location.href = "poison.html";
+    })
+    document.querySelector("#threetowers").addEventListener("click",e =>{
+        location.href = "threetowers.html";
+    })
+    document.querySelector("#starry").addEventListener("click",e =>{
+        location.href = "starry.html";
+    })
+    document.querySelector("#tron").addEventListener("click",e =>{
+        location.href = "tron.html";
+    })
+    document.querySelector("#volcano").addEventListener("click",e =>{
+        location.href = "volcano.html";
+    })
+    document.querySelector("#yavapai").addEventListener("click",e =>{
+        location.href = "yavapai.html";
+    })
+    /*box*/
+    document.querySelector("#AR").addEventListener("click",e =>{
+        location.href = "marker based/AR.html";
+    })
+    document.querySelector("#nft").addEventListener("click",e =>{
+        location.href = "http://localhost:3000/";
+    })
+    /*document.querySelector("#forest").addEventListener("click",e =>{
+        location.href = "marker based/AR.html";
+    })*/
+</script>
+</html>

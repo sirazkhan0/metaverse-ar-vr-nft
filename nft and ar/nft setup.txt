@@ -1,0 +1,11 @@
+first terminal:-
+npx hardhat node
+
+second terminal:-
+npx hardhat run scripts/deploy.js --network localhost
+npm run dev
+
+then import accout from first terminal when on localhost:3000
+
+
+
